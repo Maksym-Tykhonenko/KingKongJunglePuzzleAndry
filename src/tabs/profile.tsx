@@ -248,11 +248,11 @@ export default function Profile({ navigation }: any) {
           <TextInput
             style={styles.textInput}
             value={lastName}
-            placeholder='Nickname'
+            placeholder='Last Name'
             onChangeText={(value: string) => setLastName(value)}
             placeholderTextColor={'#F6F6F6'}
           />
-         {/** <View
+          <View
             style={{
               flexDirection: 'row',
               justifyContent: 'space-between',
@@ -297,7 +297,7 @@ export default function Profile({ navigation }: any) {
                 }}
               />
             </View>
-          </View> */}
+          </View>
           <Pressable 
             style={[styles.resetButton, {backgroundColor: !isResetButton ? 'transparent' : '#FAC93E'}]}
             onPressIn={() => setIsResetButton(true)}

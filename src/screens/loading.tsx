@@ -36,10 +36,9 @@ export default function Loading({ navigation }: any) {
       <View
         style={styles.container}
       >
-        <Image 
-          source={require('../../assets/png/logo.png')}
-          style={styles.logoImg}
-        />
+        <Text style={styles.logo}>
+          Jungle Puzzle
+        </Text>
         <View style={styles.loadingContainer}>
           <Animated.View
             style={[
@@ -61,6 +60,10 @@ export default function Loading({ navigation }: any) {
           Loading...
         </Text>
       </View>
+        <Image 
+          source={require('../../assets/png/monkey-bg.png')}
+          style={styles.logoImg}
+        />
     </ImageBackground>
   )
 };
@@ -90,7 +93,20 @@ const styles = StyleSheet.create({
     height: '100%',
   },
   logoImg: {
-    width: '85%',
+    width: 300,
     resizeMode: 'contain',
+    height: 300,
+    position: 'absolute',
+    bottom: 0,
+    alignSelf: 'center'
+  },
+  logo: {
+    color: '#D51500',
+    fontWeight: 900,
+    fontSize: 60,
+    textAlign: 'center',
+    textShadowColor: '#FAC93E',
+    textShadowOffset: { width: 0, height: 0 },
+    textShadowRadius: 4
   }
 })
