@@ -45,7 +45,7 @@ const Tab = createBottomTabNavigator();
 const CustomTabBar = ({ state, descriptors, navigation }) => {
   return (
     <View style={styles.tabBarContainer}>
-      <BlurView style={styles.blurContainer} blurType="light" blurAmount={20}/>
+      <BlurView style={[styles.blurContainer, { backgroundColor: 'rgba(2, 51, 10, 0.5)' }]} blurType="light" blurAmount={20}/>
         <View style={styles.innerTabBar}>
           {state.routes.map((route, index) => {
             const { options } = descriptors[route.key];

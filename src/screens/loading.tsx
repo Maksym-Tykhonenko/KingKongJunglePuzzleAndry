@@ -26,7 +26,7 @@ export default function Loading({ navigation }: any) {
 
   return (
     <ImageBackground
-      source={require('../../assets/png/loading-bg.png')}
+      source={require('../../assets/newDiz/Background.png')}
       resizeMode='cover'
       style={{
         flex: 1,
@@ -60,10 +60,7 @@ export default function Loading({ navigation }: any) {
           Loading...
         </Text>
       </View>
-        <Image 
-          source={require('../../assets/png/monkey-bg.png')}
-          style={styles.logoImg}
-        />
+        
     </ImageBackground>
   )
 };

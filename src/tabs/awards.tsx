@@ -23,7 +23,7 @@ export default function Awards({ navigation }: any) {
 
   return (
     <ImageBackground
-      source={require('../../assets/png/background.png')}
+      source={require('../../assets/newDiz/Background.png')}
       resizeMode='cover'
       style={{
         flex: 1,
